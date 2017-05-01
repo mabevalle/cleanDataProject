@@ -33,7 +33,7 @@ variablesNames<-names(dataset)
 c<-variablesNames[1:86]
 meltData<-melt(dataset,id=c("activity","subject"),measure.vars = c)
 newDataSet<-dcast(meltData,activity + subject~variable,mean,na.rm=TRUE)
-
+write.table(newDataSet, file = "./projectCleanData/scripts/q5dataset.txt", row.names = FALSE)
 
 
 
