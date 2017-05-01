@@ -1,4 +1,5 @@
 #Run Analysis script description
+
 #The script uses the raw data collected from the accelerometers from the Samsung Galaxy S smartphone for performing wearable 
 #computing.
 
