@@ -19,11 +19,7 @@ dataset$activity<-factor(dataset$activity)
 dataset$subject<-factor(dataset$subject)
 
 ##Uses descriptive activity names to name the activities in the data set
-<<<<<<< HEAD
 install.packages("DataCombine")
-=======
-#install.packages("DataCombine")
->>>>>>> 7f68bab5bdacb310ff68fd6ce4f75fbc112ffd56
 library(DataCombine)
 num<-c(1,2,3,4,5,6)
 nam<-c("walking","walking upstairs", "walking downstairs", "sitting", "standing","laying")
@@ -32,20 +28,10 @@ dataset<-FindReplace(data=dataset , Var = "activity",replaceData = replaceValues
 dataset$activity<-factor(dataset$activity)
 
 ##From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-<<<<<<< HEAD
 library(reshape2)
-=======
-#library(reshape2)
->>>>>>> 7f68bab5bdacb310ff68fd6ce4f75fbc112ffd56
 variablesNames<-names(dataset)
 c<-variablesNames[1:86]
 meltData<-melt(dataset,id=c("activity","subject"),measure.vars = c)
 newDataSet<-dcast(meltData,activity + subject~variable,mean,na.rm=TRUE)
-<<<<<<< HEAD
 write.table(newDataSet, file = "./projectCleanData/scripts/q5dataset.txt", row.names = FALSE, col.names = TRUE)
-=======
-write.table(newDataSet, file = "./projectCleanData/scripts/q5dataset.txt", row.names = FALSE)
 
-
-
->>>>>>> 7f68bab5bdacb310ff68fd6ce4f75fbc112ffd56
