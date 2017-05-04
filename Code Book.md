@@ -55,9 +55,9 @@ fBodyGyroJerkMag<br />
   FFT applied to magnitude of the body gyroscope jerk signal<br />
 
 <br />
-The set of variables that were estimated from these signals are: 
+The set of variables that were estimated from these signals are: <br />
   <br />mean(): Mean value<br />
- <br /> std(): Standard deviation<br />
+ std(): Standard deviation<br />
 <br /><br />
 **Transformations** <br />
  Subject and Activity has been turn into factors<br />
