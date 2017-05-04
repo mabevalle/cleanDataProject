@@ -1,8 +1,8 @@
-#Code Book 
+**Code Book**
 
 The tidy data has 88 Variables according to instruction of the assignment, where extracting only the measurements on the mean and standard deviation for each measurement was requested.
 
-There variables are:
+*VARIABLES*
 
 Activity:
          1 WALKING
