@@ -1,63 +1,64 @@
 **Code Book**
-
+===========
 The tidy data has 88 Variables according to instruction of the assignment, where extracting only the measurements on the mean and standard deviation for each measurement was requested.
 
 *VARIABLES*
+----------------
+Activity <br /> <br />
+         1. WALKING <br />
+         2. WALKING_UPSTAIRS <br />
+         3. WALKING_DOWNSTAIRS<br />
+         4. SITTING <br />
+         5. STANDING <br />
+         6. LAYING <br />
+         <br />
+Subject: <br />
+  Refers to the number assigned to the tested subject. <br />
 
-Activity:
-         1 WALKING
-         2 WALKING_UPSTAIRS
-         3 WALKING_DOWNSTAIRS
-         4 SITTING
-         5 STANDING
-         6 LAYING
-Subject:
-  Refers to the number assigned to the tested subject.
+t: Time <br />
 
-t: Time
+F: Fast Fourier Transform was applied to some of the signals in time, producing variables in frequency <br />
+<br />
+tBodyAcc-XYZ: <br />
+  the body linear acceleration denoted in 3-axil signals X,Y and Z <br /><br />
+tGravityAcc-XYZ:<br />
+  Gravity acceleration in 3-axial signals <br /><br />
+tBodyAccJerk-XYZ:<br />
+  the body linear acceleration and angular velocity derived in time to obtain Jerk signals <br /><br />
+tBodyGyro-XYZ:<br />
+  the body gyroscope signal denoted in 3-axil signals X,Y and Z<br /><br />
+tBodyGyroJerk-XYZ:<br />
+  the body gyroscope signal derived in time to obtain Jerk signals <br /><br />
+tBodyAccMag:<br />
+  The magnitude of the body acceleration signal, calculated using the Euclidean norm <br /><br />
+tGravityAccMag:<br />
+  The magnitude of the gravity acceleration signal, calculated using the Euclidean norm <br /><br />
+tBodyAccJerkMag:<br />
+  The magnitude of the body acceleration jerk signal, calculated using the Euclidean norm <br /><br />
+tBodyGyroMag:<br />
+  The magnitude of the body gyroscope signal, calculated using the Euclidean norm <br /><br />
+tBodyGyroJerkMag:<br />
+  The magnitude of the body gyroscope jerk signal, calculated using the Euclidean norm <br /><br />
+fBodyAcc-XYZ<br />
+  FFT applied to body acceleration signal in 3-axil signals X,Y,Z<br /><br />
+fBodyAccJerk-XYZ<br />
+  FFT applied to body acceleration jerk signal in 3-axil signals X,Y,Z<br /><br />
+fBodyGyro-XYZ<br />
+  FFT applied to bpdy gyroscope signal in 3-axil signals X,Y,Z<br /><br />
+fBodyAccMag<br />
+  FFT applied to magnitude of the body acceleration signal<br /><br />
+fBodyAccJerkMag<br />
+  FFT applied to magnitude of the body acceleration jerk signal<br /><br />
+fBodyGyroMag<br />
+  FFT applied to magnitude of the body gyroscope signal<br /><br />
+fBodyGyroJerkMag<br />
+  FFT applied to magnitude of the body gyroscope jerk signal<br />
 
-F: Fast Fourier Transform was applied to some of the signals in time, producing variables in frequency
-
-tBodyAcc-XYZ:
-  the body linear acceleration denoted in 3-axil signals X,Y and Z
-tGravityAcc-XYZ:
-  Gravity acceleration in 3-axial signals
-tBodyAccJerk-XYZ:
-  the body linear acceleration and angular velocity derived in time to obtain Jerk signals 
-tBodyGyro-XYZ:
-  the body gyroscope signal denoted in 3-axil signals X,Y and Z
-tBodyGyroJerk-XYZ:
-  the body gyroscope signal derived in time to obtain Jerk signals 
-tBodyAccMag:
-  The magnitude of the body acceleration signal, calculated using the Euclidean norm 
-tGravityAccMag:
-  The magnitude of the gravity acceleration signal, calculated using the Euclidean norm 
-tBodyAccJerkMag:
-  The magnitude of the body acceleration jerk signal, calculated using the Euclidean norm 
-tBodyGyroMag:
-  The magnitude of the body gyroscope signal, calculated using the Euclidean norm 
-tBodyGyroJerkMag:
-  The magnitude of the body gyroscope jerk signal, calculated using the Euclidean norm 
-fBodyAcc-XYZ
-  FFT applied to body acceleration signal in 3-axil signals X,Y,Z
-fBodyAccJerk-XYZ
-  FFT applied to body acceleration jerk signal in 3-axil signals X,Y,Z
-fBodyGyro-XYZ
-  FFT applied to bpdy gyroscope signal in 3-axil signals X,Y,Z
-fBodyAccMag
-  FFT applied to magnitude of the body acceleration signal
-fBodyAccJerkMag
-  FFT applied to magnitude of the body acceleration jerk signal
-fBodyGyroMag
-  FFT applied to magnitude of the body gyroscope signal
-fBodyGyroJerkMag
-  FFT applied to magnitude of the body gyroscope jerk signal
-
-
-The set of variables that were estimated from these signals are: 
-  mean(): Mean value
-  std(): Standard deviation
-
-Transformations 
- Subject and Activity has been turn into factors
- The variable Activity has been changed from numbers to a descriptive name
+<br />
+The set of variables that were estimated from these signals are: <br /><br />
+  <br />mean(): Mean value<br />
+ <br /> std(): Standard deviation<br />
+<br /><br />
+**Transformations** <br />
+ Subject and Activity has been turn into factors<br />
+ The variable Activity has been changed from numbers to a descriptive name<br />
